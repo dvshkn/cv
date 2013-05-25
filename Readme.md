@@ -1,11 +1,37 @@
-# About
-Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
+About
+=====
 
-Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
+This repo contains the latest general version of my resume. There is also an example cover letter with similar styling in case anybody finds it useful.
+
+The XeTeX code was originally based on Adrien Friggeri's elegantly-styled CV, but the template has diverged a good deal.
+
+### Fonts
++ Helvetica Neue
++ Roboto
++ Font Awesome
+
+### TeX Stuff
++ xelatex
++ bibtex
++ article template
++ letter template
++ geometry package
++ paralist package
++ fontspec package
++ tikq package
++ xcolor package
 
 
-# License
+TODO
+====
 
++ Generalize the TikZ header layouts. The way the headers are laid out right now is super-brittle. I'll apologize in advance to anyone who's name happens to have different dimensions from my own...
+
+
+License
+=======
+
+Copyright (C) 2013, David Knight
 Copyright (C) 2012, Adrien Friggeri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
