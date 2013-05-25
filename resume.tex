@@ -1,0 +1,177 @@
+\documentclass{dvshkn-resume}
+\addbibresource{publications.bib}
+
+
+\begin{document}
+\header{David}{Knight}{Software Engineer}
+\begin{resumebody}
+
+\begin{sidebar}
+    \sectionbody
+    {
+        \raggedleft
+        \textawesomeright{\faEnvelope}{david@dvshkn.com}\\
+        \textawesomeright{\faGlobe}{http://dvshkn.com/}\\
+        \textawesomeright{\faGithub}{dvshkn}\\
+    }
+
+    \sectionheader{PROGRAMMING}
+    \sectionbody
+    {
+        \raggedleft
+        \subsectionheader{Current Use}
+        Java, Python, Javascript\\
+        \subsectionheader{Prior Use}
+        C, C++, MATLAB\\
+    }
+
+    \sectionheader{TECHNOLOGIES}
+    \sectionbody
+    {
+        \raggedleft
+        \subsectionheader{Current Use}
+        Amazon Web Services, Boto, XStream, node.js\\
+        \subsectionheader{Prior Use}
+        OpenCV, Android, WebGL, LIBSVM, Hadoop, Atmel AVR, Qt Framework\\
+    }
+
+    \sectionheader{CLOUD SERVICES}
+    \sectionbody
+    {
+        \raggedleft
+        Simple Workflow, S3, SimpleDB, EC2, GovCloud, CloudFront, Route 53
+    }
+
+    \sectionheader{ACADEMIC INTERESTS}
+    \sectionbody
+    {
+        \raggedleft
+        Visual Search, Data Visualization, Machine Learning
+    }
+
+    \sectionheader{GRADUATE COURSES}
+    \sectionbody
+    {
+        \raggedleft
+        Image Processing, Computer Vision, Applied Vision and Image Systems, Machine Learning, Database System Principles
+    }
+\end{sidebar}
+
+\sectionheader{SUMMARY}
+\sectionbody
+{
+    \begin{compactitem}
+        \item Experience developing for a variety of platforms ranging from cloud systems to microcontroller firmware
+        \item Previously delivered cloud-based data processing services for both Mars rover tactical operations and public outreach
+        \item Seeking opportunities to develop algorithmically challenging applications that operate on large scientific datasets
+    \end{compactitem}
+}
+
+\sectionheader{WORK EXPERIENCE}
+\sectionbody
+{
+    \newentry
+    {9.2011--Present}
+    {NASA Jet Propulsion Laboratory, Caltech}
+    {Ops Lab Software Engineer}
+    {
+        \subsectionheader{Curiosity Mars Rover, Ground Data Processing}
+        \begin{compactitem}
+            \item Lead development and deployment of mission-critical image ingestion and processing pipeline for Mars rover operations software suite
+            \item Refactored pipeline codebase and performed Amazon SWF API migration without disruption to mission operations
+        \end{compactitem}
+
+        \subsectionheader{Curiosity Mars Rover, Public Outreach Automation}
+        \begin{compactitem}
+            \item Architected, developed, and deployed data pipeline to automatically release rover imagery and telemetry data to the Curiosity Raw Images Gallery, NASA's Explore Mars web apps, and other data consumers
+            \item Implemented scalability improvements to reduce server load on the JPL Mars Exploration Program websites in anticipation of increased traffic for Curiosity's landing on Mars
+        \end{compactitem}
+
+        \subsectionheader{Cloud Computing Working Group, Scientific Viability Exploration}
+        \begin{compactitem}
+            \item Established viability of commercial cloud for NASA projects by benchmarking Amazon EC2 vs. NASA internal resources
+            \item Demonstrated performance competitiveness of cloud clusters by registering 12 TFLOPS in Linpack across 64 cc2.8xlarge instances
+            \item Achieved roughly 25\% computational performance of a 2011 TOP500 supercomputer for under \$70/hr
+        \end{compactitem}
+    }
+    \newentry
+    {6.2011--9.2011}
+    {Inspire Medical Startup, Stanford D.School}
+    {Electronics Designer}
+    {
+        \begin{compactitem}
+            \item Designed and built PWM pump controller circuit and battery charging circuit for prototype bubble CPAP machine targeted towards the developing world
+        \end{compactitem}
+    }
+    \newentry
+    {6.2010--8.2011}
+    {NASA Jet Propulsion Laboratory, Caltech}
+    {Software Development Intern}
+    {
+        \begin{compactitem}
+            \item Developed WebGL-based terrain visualizer for the Lunar Mapping and Modeling Project (LMMP) to render elevation maps of the moon's surface in 3D
+            \item Visualizer later used by senior engineers as part of LMMP demo for NASA HQ
+        \end{compactitem}
+    }
+}
+
+\sectionheader{EDUCATION}
+\sectionbody
+{
+    \newentry
+        {2009--2011}
+        {M.S. in Electrical Engineering}
+        {Stanford University}
+        {Emphasis on Computer Vision and Software Systems}
+    \newentry
+        {2004--2009}
+        {Honors B.S. in Electrical Engineering}
+        {Oregon State University}
+        {Emphasis on Signal Processing and Wireless Communication\\
+        Thesis --- \emph{Implementing a Wireless Accelerometer Network for Tsunami Simulations}}
+}
+
+\sectionheader{PROJECTS}
+\sectionbody
+{
+    \newentry
+    {2010--2011}
+    {Kinect Hand Pose Recognition}
+    {2 Person Group}
+    {
+        \begin{compactitem}
+            \item Implemented discriminative method in MATLAB to identify open and closed hand poses from localized Kinect image patches
+        \end{compactitem}
+    }
+    \newentry
+    {2010}
+    {Android Plant Leaf Identification App}
+    {2 Person Group}
+    {
+        \begin{compactitem}
+            \item Prototyped an Android application trained to discriminate between different kinds of plant leaves in order to provide an offline nature reference for hiking
+            \item Implemented many MATLAB image processing toolbox functions in Java
+        \end{compactitem}
+    }
+    \newentry
+    {2007--2009}
+    {Wireless Accelerometer Network for Tsunami Simulations}
+    {4 Person Group}
+    {
+        \begin{compactitem}
+            \item Wrote Atmel ATmega microcontroller functionality in C to operate a wireless transceiver chip
+            \item Developed C++ GUI client to allow a PC with a USB RF module to communicate with the microcontroller boards
+        \end{compactitem}
+    }
+}
+
+\sectionheader{PUBLICATIONS}
+\sectionbody
+{
+    \nocite{*}
+    \printbibliography[type=inproceedings, heading=none]
+}
+
+\end{resumebody}
+
+\end{document}
